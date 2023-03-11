@@ -9,3 +9,13 @@
 ## 通信链路
 bfWakePc <-> 巴法云 <-> 米家小爱/天猫精灵/小度音响/Amazon Alexa
 
+## 如何编译？
+将此项目复制到 openwrt-sdk/package/
+执行命令
+``` sheel
+cd ~/openwrt-sdk
+./scripts/feeds install bfWakePc
+make package/bfWakePc/compile V=sc
+```
+
+编译完成后会打印 ipk 文件所在位置，将 ipk 上传到路由器中安装即可
