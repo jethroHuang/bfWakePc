@@ -1,0 +1,5 @@
+config server
+option enable '0'
+option privateKey ''
+option topic ''
+option mac ''
